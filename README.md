@@ -42,6 +42,8 @@ Monitoramento e automação (Evidently + GitHub Actions)
 | Pêndulo amortecido | θ'' + (b/m)θ' + (g/L)θ = 0 | pendente |
 | Resfriamento de Newton | T(t) = T∞ + (T₀ - T∞)·e^(-kt) | pendente |
 
+e mais dois que serão testes: resolução do sistema quantico mais simples possivel e problema de dois corpos (3 corpos a netflix ja resolveu)
+
 ---
 
 ## Estrutura do repositório
