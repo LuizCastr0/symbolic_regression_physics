@@ -1,9 +1,9 @@
 # Redescoberta de Leis Físicas com Regressão Simbólica
 
-Aplicação de machine learning para descobrir automaticamente equações matemáticas a partir de dados de medição de sistemas físicos — sem conhecer a equação de antemão.
+Aplicação de machine learning para descobrir automaticamente equações matemáticas a partir de dados de medição de sistemas físicos, sem conhecer a equação.
 
 **Autor:** Luiz Felipe Castro — luiz.castro@usp.br  
-**Status:** em desenvolvimento — fase 1 de 6
+**Status:** em desenvolvimento — 
 
 ---
 
@@ -33,7 +33,7 @@ Monitoramento e automação (Evidently + GitHub Actions)
 
 ---
 
-## Sistemas físicos estudados
+## Sistemas físicos que vão ser estudados
 
 | Sistema | Equação real | Status |
 |---|---|---|
