@@ -10,10 +10,6 @@ GITIGNORE
 
 
 
-Claude é uma IA e pode cometer erros. Por favor, verifique as respostas.
-Symbolic · GITIGNORE
-Copiar
-
 # Python
 __pycache__/
 *.py[cod]
