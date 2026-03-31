@@ -24,12 +24,6 @@ Regressão simbólica (PySR)
         ↓
 Rastreamento de experimentos (MLflow)
         ↓
-Versionamento de dados (DVC)
-        ↓
-Deploy — app interativo (Streamlit)
-        ↓
-Monitoramento e automação (Evidently + GitHub Actions)
-```
 
 ---
 
@@ -73,7 +67,6 @@ cd symbolic_regression_physics
 pip install -r requirements.txt
 ```
 
-Execute os notebooks em ordem numérica. O app Streamlit pode ser iniciado com:
 
 ```bash
 streamlit run app/streamlit_app.py
@@ -86,8 +79,3 @@ streamlit run app/streamlit_app.py
 - **PySR** — regressão simbólica via algoritmo genético
 - **scipy** — geração de dados e solução numérica de EDOs
 - **MLflow** — rastreamento de experimentos
-- **DVC** — versionamento de dados
-- **Streamlit** — interface interativa
-- **Evidently AI** — monitoramento de qualidade
-- **GitHub Actions** — automação do pipeline
-- **Docker** — containerização
