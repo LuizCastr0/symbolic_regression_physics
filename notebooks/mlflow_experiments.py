@@ -7,7 +7,7 @@ from pysr import PySRRegressor
 mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("symbolic_regression_physics")
 
-# SISTEMA 1 — Queda livre
+
 
 data = np.loadtxt("../data/raw/dados_queda_livre.csv", delimiter=",", skiprows=1)
 t_ql = data[:, 0].reshape(-1, 1)
@@ -42,9 +42,6 @@ with mlflow.start_run(run_name="queda_livre"):
     mlflow.log_metric("complexity", int(best_ql.complexity))
     mlflow.log_text(best_ql.equation, "equacao_encontrada.txt")
     print(f"[Queda livre] Equação: {best_ql.equation}")
-
-
-# SISTEMA 2 — Oscilador harmônico
 
 data = np.loadtxt("../data/raw/dados_massa_mola.csv", delimiter=",", skiprows=1)
 t_mm = data[:, 0].reshape(-1, 1)
@@ -81,9 +78,6 @@ with mlflow.start_run(run_name="oscilador_harmonico"):
     print(f"[Oscilador harmônico] Equação: {best_mm.equation}")
 
 
-
-# SISTEMA 3 — Pêndulo amortecido
-
 data = np.loadtxt("../data/raw/dados_pendulo_amortecido.csv", delimiter=",", skiprows=1)
 t_pa = data[:, 0].reshape(-1, 1)
 y_pa = data[:, 1]
@@ -118,9 +112,6 @@ with mlflow.start_run(run_name="pendulo_amortecido"):
     mlflow.log_text(best_pa.equation, "equacao_encontrada.txt")
     print(f"[Pêndulo amortecido] Equação: {best_pa.equation}")
 
-
-
-# SISTEMA 4 — Resfriamento de Newton
 
 data = np.loadtxt("../data/raw/dados_resfriamento_newton.csv", delimiter=",", skiprows=1)
 t_rn = data[:, 0].reshape(-1, 1)
@@ -163,8 +154,4 @@ with mlflow.start_run(run_name="resfriamento_newton"):
     mlflow.log_metric("loss", float(best_rn.loss))
     mlflow.log_metric("complexity", int(best_rn.complexity))
     mlflow.log_text(best_rn.equation, "equacao_encontrada.txt")
-    print(f"[Resfriamento Newton] Equação: {best_rn.equation}")
 
-
-print("\nTodos os experimentos registrados no MLflow.")
-print("Rode 'mlflow ui' no terminal para visualizar.")
